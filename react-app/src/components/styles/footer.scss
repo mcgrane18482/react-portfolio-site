@@ -1,0 +1,32 @@
+@import '../../index.scss';
+
+footer {
+    position: sticky;
+    top: 100%;
+	color: var(--secondary-color);
+	p{
+		padding-bottom: 10px;
+	}
+	a{
+		color: var(--secondary-color);
+	}
+	a:hover{
+		font-weight: 500;
+	}
+}
+
+.footer-nav {
+	display: flex;
+    flex-direction: row;
+	list-style: none;
+	justify-content: space-between;
+	
+	a{
+		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	
+
+}

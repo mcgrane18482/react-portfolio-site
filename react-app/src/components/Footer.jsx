@@ -1,31 +1,22 @@
-import React from 'react'; 
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './styles/footer.scss';
 
 const Footer = () => {
+	const date = new Date();
+	const year = date.getFullYear();
 	return (
-		<>
-			<div className="footer">
-				<div className="footer-links">
-					<ul className="footer-nav-link-list">
-						<li className="footer-nav-link-item">
-							<NavLink to="/">Home</NavLink>
-						</li>
-						<li className="footer-nav-link-item">
-							<NavLink to="/about">About</NavLink>
-						</li>
-						<li className="footer-nav-link-item">
-							<NavLink to="/contact">Contact</NavLink>
-						</li>
-					</ul>
-				</div>
+		<footer className="row justify-between align-center">
+			<nav className="footer-nav">
 
-				<div className="footer-credits">
-					<div className="footer-credits-text">
-						© 2023 McGrane.dev
-					</div>
-				</div>
-			</div>
-		</>
+				<NavLink to="/">Home</NavLink>
+
+				<NavLink to="/about">About</NavLink>
+
+				<NavLink to="/contact">Contact</NavLink>
+
+			</nav>
+			<p className="text-center">&copy; {year} McGrane.dev</p>
+		</footer>
 	);
 };
 
