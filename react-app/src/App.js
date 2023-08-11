@@ -1,10 +1,11 @@
-import {useState} from 'react';
-import {Routes, Route} from 'react-router-dom'
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom'
 
 
 // Component Imports
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Projects from './components/Portfolio/allProjects'
 
 // Page imports
 import Homepage from './pages/Homepage';
@@ -23,7 +24,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
 
-     
+
       <Footer />
     </main>
   );

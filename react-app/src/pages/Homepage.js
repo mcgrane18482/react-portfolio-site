@@ -1,7 +1,11 @@
-function Homepage(){
-    return(
+import Hero from '../components/Hero';
+import Portfolio from '../components/Portfolio/allProjects'
+
+function Homepage() {
+    return (
         <>
-            <h1>Homepage</h1>
+            <Hero />
+            <Portfolio />
         </>
     )
 }
