@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import './styles/footer.scss';
+import './footer.scss';
 
 const Footer = () => {
 	const date = new Date();

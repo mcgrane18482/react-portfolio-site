@@ -1,11 +1,12 @@
 import Hero from '../components/Hero';
-import Portfolio from '../components/Portfolio/allProjects'
+import AllProjects from './allProjects';
+
 
 function Homepage() {
     return (
         <>
             <Hero />
-            <Portfolio />
+            <AllProjects />
         </>
     )
 }
