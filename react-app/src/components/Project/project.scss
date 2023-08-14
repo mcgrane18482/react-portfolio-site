@@ -1,7 +1,36 @@
 .project-section{
-    display: grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+  gap: 20px;
+  margin-bottom: 20px;
   }
-  
-  .project-card{
-    width: 450px;
-  }
+    
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  height: auto;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: #ccc;
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+    object-fit:cover;
+}
+
+.project-title{
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.project-description{
+  margin: 8px 0;
+  font-family: 'Poppins';
+  color: var(--secondary-color);
+}
+
+.project-link a{
+  color: var(--accent-color);
+}

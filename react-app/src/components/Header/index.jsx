@@ -7,7 +7,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
 
     return (
-        <header className="">
+        <header>
             <div className="header-content">
                 <div className="logo">E. MCGRANE</div>
 
@@ -15,6 +15,7 @@ const Header = () => {
                 <nav>
                     <NavLink to="/">HOME</NavLink>
                     <NavLink to="/about">ABOUT</NavLink>
+                    <NavLink to="/portfolio">PORTFOLIO</NavLink>
                     <NavLink to="/contact">CONTACT</NavLink>
 
                 </nav>

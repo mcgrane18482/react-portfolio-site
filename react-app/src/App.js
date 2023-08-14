@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/about' element={<About />} />
+          <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>

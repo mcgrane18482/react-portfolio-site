@@ -5,17 +5,19 @@ const Footer = () => {
 	const date = new Date();
 	const year = date.getFullYear();
 	return (
-		<footer className="row justify-between align-center">
-			<nav className="footer-nav">
+		<footer>
+			<div className="footer-content">
+				<nav className="footer-nav">
 
-				<NavLink to="/">Home</NavLink>
+					<NavLink to="/">Home</NavLink>
 
-				<NavLink to="/about">About</NavLink>
+					<NavLink to="/about">About</NavLink>
 
-				<NavLink to="/contact">Contact</NavLink>
+					<NavLink to="/contact">Contact</NavLink>
 
-			</nav>
-			<p className="text-center">&copy; {year} McGrane.dev</p>
+				</nav>
+				<p className="text-center">&copy; {year} McGrane.dev</p>
+			</div>
 		</footer>
 	);
 };

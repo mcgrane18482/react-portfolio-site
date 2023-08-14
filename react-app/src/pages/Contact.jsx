@@ -1,4 +1,28 @@
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faGithub,
+    faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+
 function Contact() {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleInputChange = e => {
+        const prop = e.target.name;
+        const value = e.target.value;
+
+        setFormData({
+            ...formData,
+            [prop]: value
+        });
+    };
+
     return (
         <main>
             <div className="first-section">
@@ -8,12 +32,26 @@ function Contact() {
             <div className="contact-page-title">Let's get in touch: Send me an email and I will get back to you shortly!</div>
 
             <div className="contact-form">
-                <form>
-                    <input type="text" className="contact-input" placeholder="Your name" />
-                    <input type="email" className="contact-input" placeholder="Your email" />
-                    <textarea cols="30" rows="10" className="contact-input-message" placeholder="Message" />
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="b9f04702-606f-43d6-8286-c87d9fad54ed" />
+                    <input onChange={handleInputChange} value={formData.name} name="name" type="text" className="contact-input" placeholder="Your name" />
+                    <input onChange={handleInputChange} value={formData.email} type="email" name="email" className="contact-input" placeholder="Your email" />
+                    <textarea onChange={handleInputChange} value={formData.message} name="message" cols="30" rows="10" className="contact-input-message" placeholder="Message" />
                     <button className="send-btn">Send Message</button>
                 </form>
+            </div>
+
+            <div className="accent-title">FIND ME ON</div>
+            <div className="row">
+
+                <a className="icon" href="https://github.com/mcgrane18482" target="_blank">
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+
+                </a>
+                <a className="icon" href="https://www.linkedin.com/in/c-erinmcgrane/" target="_blank" >
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+
+                </a>
             </div>
         </main>
     )
