@@ -1,12 +1,15 @@
 # React Portfolio Site
 
-##Description
+## Description
+
 Portfolio for my web development projects built using React and deployed on Netlify.
 
-##Preview
-<img src="/react-app/src/assets/images/react-portfolio-screenshot.png>
+## Preview
 
-##Future Development
+<img src="/react-app/src/assets/images/react-portfolio-screenshot.png">
+
+## Future Development
+
 Updates to the UI, and additional content will be added in the future.
 
-##Link
+## Link
