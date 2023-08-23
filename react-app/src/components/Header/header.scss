@@ -43,16 +43,21 @@ header{
     color:var(--accent-color);
 }
 
-.nav-btn{
-  padding: 5px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  visibility: hidden;
+#mobile{
+  display:none;
 }
 
-@media only screen and (max-width: 980px){
-  .nav-btn {
-    visibility: visibile;
+@media only screen and (max-width: 769px){
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+  }li {
+    margin-bottom: 20px;
+  }
+  #mobile{
+    display: block;
   }
 }
