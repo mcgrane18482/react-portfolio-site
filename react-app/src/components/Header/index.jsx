@@ -7,32 +7,39 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
 
-    const [menuIcon, setMenuIcon] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = async e => {
-        setMenuIcon(!menuIcon);
+        setMenuOpen(!menuOpen);
     };
 
     return (
-        <header>
-            <div className="header-content">
-                <div className="logo">E. MCGRANE</div>
 
+        <nav className="header-content">
+            <NavLink to="/" className="logo">E. MCGRANE</NavLink>
 
-                <nav className="navbar">
+            <ul className={menuOpen ? "open" : ""}>
+                <li>
                     <NavLink to="/">HOME</NavLink>
+                </li>
+                <li>
                     <NavLink to="/about">ABOUT</NavLink>
+                </li>
+                <li>
                     <NavLink to="/portfolio">PORTFOLIO</NavLink>
+                </li>
+                <li>
                     <NavLink to="/contact">CONTACT</NavLink>
+                </li>
 
-                </nav>
+            </ul>
 
-                <div id="mobile">
-                    <FontAwesomeIcon id="menu-icon" onClick={toggleMenu} icon={menuIcon ? faTimes : faBars} />
-                </div>
-
+            <div id="mobile">
+                <FontAwesomeIcon id="menu-icon" onClick={toggleMenu} icon={menuOpen ? faTimes : faBars} size="2x" />
             </div>
-        </header>
+
+        </nav>
+
     )
 }
 export default Header;
