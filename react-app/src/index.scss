@@ -9,8 +9,7 @@
 	--secondary-color: #65656d;
 	--tertiary-color: #acacb4;
 	--accent-color: #0cbbb2;
-  --accent-color-2: #272946;
-
+  --icon-color: #464d92;
 }
 
 *{
@@ -41,26 +40,6 @@ code {
     monospace;
 }
 
-.row, .column {
-  display: flex;
-}
-
-.column{
-  flex-direction: column;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.text-center{
-  text-align: center;
-}
-
 .page-content{
   max-width: 980px;
   margin: auto;
@@ -72,7 +51,7 @@ code {
   margin-top: 80px;
 }
 
-.first-section-title{
+.hero-title{
   font-family: 'Comfortaa', cursive;
   font-size: 40px;
   font-weight: 700;
@@ -80,7 +59,14 @@ code {
   justify-content: left;
 }
 
-.first-section-subtitle{
+.main-title{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 26px;
+  color: #454549;
+}
+
+.main-subtitle{
   color: var(--secondary-color);
   font-size: 18px;
   margin-top: 25px;
@@ -103,13 +89,16 @@ code {
 
 .icon{
   font-size: 16px;
-  color:var(--accent-color);
+  color:var(--icon-color);
   margin-top: 10px;
   padding: 6px;
+  transition: 0.3s ease;
 }
 
 .icon:hover{
-  filter: brightness(0.85);
+  // filter: brightness(0.85);
+  color:var(--accent-color);
+  transition: 0.3s ease;
 }
 
 .accent-title{

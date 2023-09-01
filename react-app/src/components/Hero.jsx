@@ -8,8 +8,8 @@ const Hero = () => {
     return (
         <section className="first-section">
             <div className="left-half">
-                <div className="first-section-title">Hi! I'm Erin McGrane, a web developer with a background in design.</div>
-                <div className="first-section-subtitle"> I am a Graphic Designer turned User Experience Designer turned Programmer! My passion is to bridge the gap between programming development and UX/UI design. I am on a journey to break into tech and I am ready to join your team as a web developer!</div>
+                <div className="hero-title">Hi! I'm Erin McGrane, a web developer with a background in design.</div>
+                <div className="main-subtitle"> I am a Graphic Designer turned User Experience Designer turned Programmer! My passion is to bridge the gap between programming development and UX/UI design. I am on a journey to break into tech and I am ready to join your team as a web developer!</div>
                 <div className="social">
                     <div className="accent-title">Let's connect:</div>
                     <div className="row">

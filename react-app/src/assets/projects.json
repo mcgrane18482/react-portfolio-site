@@ -2,7 +2,7 @@
     {
         "title": "MixMate",
         "description": "Full-stack application for finding cocktail recipes and sharing users drink creations",
-        "link": "https://github.com/mcgrane18482/social_network_api",
+        "link": "https://github.com/ThomasSzentirmay/MixMate-App",
         "image": "/images/mixmate-img.png"
     },
     {
@@ -15,7 +15,7 @@
         "title": "Social Network API",
         "description": "Back-end code for a social media network with CRUD functionality for users and posts. Built with node.js, mongodb, and mongoose",
         "link": "https://github.com/mcgrane18482/social_network_api",
-        "image": "/images/mixmate-img.png"
+        "image": "/images/social-network.png"
     },
     {
         "title": "Tech Blog App",
@@ -28,7 +28,8 @@
         "title": "Good Vibes Feed",
         "description": "MERN REST API created with a team of 5 developers. ",
         "link":"https://github.com/mcgrane18482/good_vibes_feed",
-        "image": "/images/mixmate-img.png"
+        "image": "/images/good-vibes-feed.png",
+        "deployed_link": "https://good-vibes-feed-0f727cb91a84.herokuapp.com/"
     },
     {
         "title": "Sequelize Employee Tracker",
