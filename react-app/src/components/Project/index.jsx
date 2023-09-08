@@ -16,11 +16,13 @@ function Project({ title, description, link, image, deployed_link }) {
                             <FontAwesomeIcon icon={faLink} /> View on Github
                         </a>
                     </div>
-                    <div className="project-link">
-                        <a href={deployed_link}>
-                            <FontAwesomeIcon icon={faLink} /> Visit Live Site
-                        </a>
-                    </div>
+                    {deployed_link && (
+                        <div className="project-link">
+                            <a href={deployed_link}>
+                                <FontAwesomeIcon icon={faLink} /> Visit Live Site
+                            </a>
+                        </div>
+                    )}
                 </div>
             </div>
 

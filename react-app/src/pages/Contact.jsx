@@ -37,22 +37,11 @@ function Contact() {
                     <input onChange={handleInputChange} value={formData.name} name="name" type="text" className="contact-input" placeholder="Your name" />
                     <input onChange={handleInputChange} value={formData.email} type="email" name="email" className="contact-input" placeholder="Your email" />
                     <textarea onChange={handleInputChange} value={formData.message} name="message" cols="30" rows="10" className="contact-input-message" placeholder="Message" />
-                    <button className="send-btn">Send Message</button>
+                    <button className="action-btn" >Send Message</button>
                 </form>
             </div>
 
-            <div className="accent-title">FIND ME ON</div>
-            <div className="row">
 
-                <a className="icon" href="https://github.com/mcgrane18482" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-
-                </a>
-                <a className="icon" href="https://www.linkedin.com/in/c-erinmcgrane/" target="_blank" >
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
-
-                </a>
-            </div>
         </main>
     )
 }

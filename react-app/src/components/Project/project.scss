@@ -1,6 +1,19 @@
+.portfolio-page-title{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.portfolio-page-subtitle{
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 .project-section{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+  // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
   gap: 20px;
   margin-bottom: 20px;
   }
@@ -9,20 +22,24 @@
   border: 1px solid #ccc;
   padding: 20px;
   height: auto;
-  width: 350px;
+  // width: 350px;
   border-radius: 5px;
   box-shadow: #ccc;
+  transition: 0.3s ease;
 }
 
 .card-image {
-    display: block;
-    width: 100%;
-    object-fit:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
 }
 
 .project-title{
   font-size: 24px;
   color: var(--primary-color);
+  margin-top: 8px;
 }
 
 .project-description{
@@ -33,4 +50,5 @@
 
 .project-link a{
   color: var(--accent-color);
+  font-size: 20px;
 }

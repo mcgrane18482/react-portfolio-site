@@ -4,12 +4,20 @@ import {
     faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
+import PFP from '../assets/images/pfp-square.png'
+
 const Hero = () => {
     return (
         <section className="first-section">
             <div className="left-half">
-                <div className="first-section-title">Hi! I'm Erin McGrane, a web developer with a background in design.</div>
-                <div className="first-section-subtitle"> I am a Graphic Designer turned User Experience Designer turned Programmer! My passion is to bridge the gap between programming development and UX/UI design. I am on a journey to break into tech and I am ready to join your team as a web developer!</div>
+                <img id="profile-pic" src={PFP} alt="Picture of Erin" />
+            </div>
+            <div className="right-half">
+                <div className="accent-title">Hi there! I'm</div>
+                <div className="hero-title">Erin McGrane, a web developer with a background in design</div>
+
+                <div className="main-subtitle"> I am a Graphic Designer turned User Experience Designer turned Programmer! My passion is to bridge the gap between programming development and UX/UI design. I am on a journey to break into tech and I am ready to join your team as a web developer!</div>
+                {/* <img id="hero-picture" src={heroPicture} alt="Image of a desktop work space"></img> */}
                 <div className="social">
                     <div className="accent-title">Let's connect:</div>
                     <div className="row">
@@ -22,18 +30,14 @@ const Hero = () => {
                             <FontAwesomeIcon icon={faLinkedin} size="2x" />
 
                         </a>
+
                     </div>
+
                 </div>
             </div>
 
-            <div className="right-half">
-                <img id="my-picture" src="https://placehold.co/300x400" alt="Logo" />
-            </div>
 
-
-
-
-        </section>
+        </section >
     )
 }
 
