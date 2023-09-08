@@ -17,7 +17,7 @@ function Portfolio() {
 
                 <Project image={mixMateImg}
                     title="MixMate"
-                    description="Built using Node, Express, Sequelize, Handlebars"
+                    description="1 week-long group project built using Node, Express, Sequelize, Handlebars"
                     link="https://github.com/ThomasSzentirmay/MixMate-App"
                     deployed_link="https://mixmatecocktails-1b7d39db7409.herokuapp.com/"
                 />
@@ -33,6 +33,9 @@ function Portfolio() {
                     link="https://github.com/mcgrane18482/social_network_api"
                 />
 
+            </div>
+            <div >
+                <a className="action-btn" href="https://github.com/mcgrane18482" target="_blank">View More on GitHub</a>
             </div>
         </section>
     )

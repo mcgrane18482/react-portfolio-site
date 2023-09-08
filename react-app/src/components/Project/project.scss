@@ -8,6 +8,7 @@
   font-family: 'Poppins';
   font-weight: 300;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .project-section{
@@ -27,20 +28,18 @@
   transition: 0.3s ease;
 }
 
-.grid-item:hover{
-  background: #f0f0f0;
-  transition: 0.3s ease;
-}
-
 .card-image {
-    display: block;
-    width: 100%;
-    object-fit:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
 }
 
 .project-title{
   font-size: 24px;
   color: var(--primary-color);
+  margin-top: 8px;
 }
 
 .project-description{
@@ -51,4 +50,5 @@
 
 .project-link a{
   color: var(--accent-color);
+  font-size: 20px;
 }

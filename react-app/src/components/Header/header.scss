@@ -14,6 +14,7 @@ nav{
     top: 0;
     ul{
       display: flex;
+      margin: 0 2rem;
     }
     ul li {
       list-style: none;
@@ -23,7 +24,8 @@ nav{
       padding: 0.5rem;
       margin: 0 0.5rem;
       color: #272946;
-      transition: all 0.2s linear 0s;
+      transition: all 0.3s ease;
+      
       &:not(:last-child){
         margin-right: 30px;
       }
@@ -31,11 +33,11 @@ nav{
         color: var(--accent-color);
         padding-bottom: 2px;
         border-bottom: 2px solid var(--accent-color);
-        font-weight: 600;
+       
       }
       &:hover:not(.active){
-        padding-bottom: 2px;
-        border-bottom: 2px solid var(--accent-color-2);
+        transition: all 0.3s ease;
+      
       }
       
     }
@@ -56,7 +58,7 @@ nav{
 
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 660px){
   nav {
     display: flex;
     flex-direction: column;
